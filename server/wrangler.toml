@@ -1,0 +1,19 @@
+name = "math-mcp-server"
+main = "server.js"
+compatibility_date = "2024-03-08"
+
+# Configure workers_dev to true to enable the workers.dev subdomain
+workers_dev = true
+
+[vars]
+ENVIRONMENT = "production"
+
+# Define the Durable Object
+[[durable_objects.bindings]]
+name = "MATH_AGENT"
+class_name = "MathAgent"
+
+# Define migrations for the Durable Object
+[[migrations]]
+tag = "v1"
+new_classes = ["MathAgent"] 
