@@ -4,17 +4,13 @@ A reference implementation demonstrating the [Model Context Protocol (MCP)](http
 
 ## Overview
 
-This repository provides a clean, production-ready reference implementation of MCP over WebSockets. It showcases:
+This repository provides a reference implementation of MCP over WebSockets. It showcases:
 
 - Complete MCP client-server architecture
 - Persistent stateful sessions via Durable Objects
 - Bidirectional real-time communication over WebSockets
 - Tool discovery and invocation
-- Edge deployment using Cloudflare Workers
-
-This implementation serves as documentation for:
-- WebSocket transport support in the [MCP specification](https://github.com/modelcontextprotocol/specification)
-- WebSocket transport implementation in the [TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
+- Deployment using Cloudflare Workers
 
 ## Technical Overview
 
@@ -87,7 +83,7 @@ The implementation supports both HTTP and WebSocket transports:
 
 - [Node.js](https://nodejs.org/) (v18 or later)
 - [Wrangler](https://developers.cloudflare.com/workers/wrangler/install-and-update/) (Cloudflare Workers CLI)
-- Cloudflare account (free tier is sufficient)
+- Cloudflare account
 
 ### Installation
 
@@ -122,7 +118,7 @@ The implementation supports both HTTP and WebSocket transports:
 
 1. Open the client URL in your browser. The interface allows you to:
    - Connect to the MCP server
-   - Run mathematical operations
+   - Run math operations
    - View the WebSocket message log
 
 #### Programmatic API
